@@ -12,16 +12,17 @@ Mis ideas para este proyecto, junto con las que redactamos en el primer informe,
 
 1. Letras referentes a la época, que distingan cada una de las décadas del festival. En el ejemplo, década 2010 y 80´s
 
-![alt text](<Idea 1-1.png>)
+![alt text](<Idea 1.png>)
 
 ![alt text](https://i.pinimg.com/736x/0a/86/73/0a8673ce1197f3f6319329ffefdf2473.jpg)
 
 
 2. Paleta de colores llamativa y continua, con un color de fondo fijo. Ejemplo, seguir los colores brillantes de los 80 y variar solo los dibujos. 
 
-![alt text](400138f476587455482410311f8fa4e9-1.jpg)
+![alt text](400138f476587455482410311f8fa4e9.jpg)
 
 ![alt text](1c7e47ae14cb86c0cb8274b4850974e3.jpg)
+
 
 Ejemplo en The Pudding: 
 https://pudding.cool/2024/07/scifi/
