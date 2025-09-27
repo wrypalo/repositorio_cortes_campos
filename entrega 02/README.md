@@ -27,3 +27,7 @@ Estos momentos, nos llevaron a pensar en otros momentos icónicos del festival a
 
 
 En base a esto, nos dimos cuenta que el festival marca a los artistas que han pasado por su escenario, tanto en su carrera como en la memoria colectiva chilena y latinoamericana, algo así como si el evento fuera una especie de “vitrina” entre el artista y su público. Por esto nuestra hipótesis es: “El Festival Internacional de la Canción de Viña del Mar funciona como una vitrina para los artistas que se presentan en el”, y lo desglosamos a través de los cantantes que se han presentado en su escenario. De esta información –que son más de 900 artistas que han participado– profundizamos cualitativamente en: el año en que se presentaron, su sexo, si es grupo o solista, su nacionalidad y su género musical. Cuantitativamente, recolectamos posiciones de charts TOP 20 y TOP100 antes y después de su participación el festival, peak de rating y números de premio ganados en el festival, para así concluir si su popularidad había subido, bajado o mantenido tras su presentación. 
+
+
+https://www.google.com/search?client=safari&rls=en&q=young+cister+festival+de+vi%C3%B1a&ie=UTF-8&oe=UTF-8#fpstate=ive&vld=cid:b9e96f66,vid:kmMEs9nxeqY,st:0
+(https://www.13.cl/programas/entretencion/todos-a-vina/shakira-recalco-la-importancia-del-festival-de-vina-en-su)
