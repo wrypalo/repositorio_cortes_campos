@@ -10,3 +10,5 @@ El gráfico permite identificar de forma visual este cambio en la frecuencia de 
 ¿Las gaviotas y antorchas se entregan en proporciones distintas? → No, ambas mantienen la misma cantidad en todo el período.
 La visualización permite observar de manera clara cómo el festival pasó de entregar un alto número de reconocimientos en sus primeras ediciones 
 del siglo XXI a un esquema más reducido y estable en la actualidad.
+
+![alt text](image.png)
