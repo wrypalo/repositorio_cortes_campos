@@ -1,6 +1,6 @@
 # Crónica 
 
-La vitrina que también refleja una brecha
+## La vitrina que también refleja una brecha
 
 El Festival Internacional de la Canción de Viña del Mar no solo ha sido, durante más de seis décadas, el escenario donde artistas de toda América Latina y el mundo buscan consolidar sus carreras y darse a conocer a un público internacional más amplio. También es un espacio que refleja, año tras año, las tendencias, gustos y desigualdades que existen dentro de la industria musical.
 
