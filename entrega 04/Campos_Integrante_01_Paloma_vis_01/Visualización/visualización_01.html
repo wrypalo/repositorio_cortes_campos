@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-223b9c0b1b56f013110d572c87596dbe"}, "mark": {"type": "area", "opacity": 0.8}, "encoding": {"color": {"field": "variable", "scale": {"domain": ["gaviota", "antorcha"], "range": ["#7E4782", "#8FA3CC"]}, "title": "Categor\u00eda", "type": "nominal"}, "x": {"field": "a\u00f1o", "title": "A\u00f1o", "type": "ordinal"}, "y": {"field": "valor", "title": "Cantidad", "type": "quantitative"}}, "height": 400, "title": "Evoluci\u00f3n de Gaviotas y Antorchas", "width": 650, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-223b9c0b1b56f013110d572c87596dbe": [{"a\u00f1o": 2025, "variable": "gaviota", "valor": 27.0}, {"a\u00f1o": 2024, "variable": "gaviota", "valor": 24.0}, {"a\u00f1o": 2023, "variable": "gaviota", "valor": 24.0}, {"a\u00f1o": 2020, "variable": "gaviota", "valor": 24.0}, {"a\u00f1o": 2019, "variable": "gaviota", "valor": 24.0}, {"a\u00f1o": 2018, "variable": "gaviota", "valor": 26.0}, {"a\u00f1o": 2017, "variable": "gaviota", "valor": 29.0}, {"a\u00f1o": 2016, "variable": "gaviota", "valor": 24.0}, {"a\u00f1o": 2015, "variable": "gaviota", "valor": 30.0}, {"a\u00f1o": 2014, "variable": "gaviota", "valor": 34.0}, {"a\u00f1o": 2013, "variable": "gaviota", "valor": 29.0}, {"a\u00f1o": 2012, "variable": "gaviota", "valor": 20.0}, {"a\u00f1o": 2011, "variable": "gaviota", "valor": 14.0}, {"a\u00f1o": 2010, "variable": "gaviota", "valor": 9.0}, {"a\u00f1o": 2009, "variable": "gaviota", "valor": 12.0}, {"a\u00f1o": 2008, "variable": "gaviota", "valor": 12.0}, {"a\u00f1o": 2007, "variable": "gaviota", "valor": 9.0}, {"a\u00f1o": 2006, "variable": "gaviota", "valor": 8.0}, {"a\u00f1o": 2005, "variable": "gaviota", "valor": 9.0}, {"a\u00f1o": 2004, "variable": "gaviota", "valor": 23.0}, {"a\u00f1o": 2003, "variable": "gaviota", "valor": 4.0}, {"a\u00f1o": 2002, "variable": "gaviota", "valor": 4.0}, {"a\u00f1o": 2025, "variable": "antorcha", "valor": null}, {"a\u00f1o": 2024, "variable": "antorcha", "valor": null}, {"a\u00f1o": 2023, "variable": "antorcha", "valor": null}, {"a\u00f1o": 2020, "variable": "antorcha", "valor": null}, {"a\u00f1o": 2019, "variable": "antorcha", "valor": null}, {"a\u00f1o": 2018, "variable": "antorcha", "valor": null}, {"a\u00f1o": 2017, "variable": "antorcha", "valor": null}, {"a\u00f1o": 2016, "variable": "antorcha", "valor": null}, {"a\u00f1o": 2015, "variable": "antorcha", "valor": null}, {"a\u00f1o": 2014, "variable": "antorcha", "valor": 34.0}, {"a\u00f1o": 2013, "variable": "antorcha", "valor": 32.0}, {"a\u00f1o": 2012, "variable": "antorcha", "valor": 32.0}, {"a\u00f1o": 2011, "variable": "antorcha", "valor": 28.0}, {"a\u00f1o": 2010, "variable": "antorcha", "valor": 20.0}, {"a\u00f1o": 2009, "variable": "antorcha", "valor": 15.0}, {"a\u00f1o": 2008, "variable": "antorcha", "valor": 32.0}, {"a\u00f1o": 2007, "variable": "antorcha", "valor": 32.0}, {"a\u00f1o": 2006, "variable": "antorcha", "valor": 36.0}, {"a\u00f1o": 2005, "variable": "antorcha", "valor": 44.0}, {"a\u00f1o": 2004, "variable": "antorcha", "valor": 38.0}, {"a\u00f1o": 2003, "variable": "antorcha", "valor": 23.0}, {"a\u00f1o": 2002, "variable": "antorcha", "valor": 15.0}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
