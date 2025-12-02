@@ -1,0 +1,246 @@
+
+VISUALIZACIÓN: Total de artistas que han participado en el festival distribuidos por años
+
+<div class="flourish-embed flourish-scatter" 
+data-src="visualisation/26570882"><script 
+src="https://public.flourish.studio/resources/embed.js"></script>
+<noscript><img src="https://public.flourish.studio/visualisation/26570882/thumbnail" 
+width="100%" alt="scatter visualization" /></noscript></div>
+
+![alt text](<grafico para -1.png>)
+
+VISUALIZACIÓN: Artistas que más se han repetido en el festival *Illustrator
+Lo hice con la función de gráfico de illustrator, escribiendo X= artista y= número de veces que ha estado. 
+
+## VISUALIZACIÓN: Géneros musicales presentados en el festival a través de los años
+
+<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/26504723"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26504723/thumbnail" width="100%" alt="bar-chart-race visualization" /></noscript></div>
+
+![alt text](<grafico de generos musicales por año-1.png>)
+
+VISUALIZACIÓN: Ingresos al top 100 post festival
+
+<div class="flourish-embed flourish-cards" data-src="visualisation/26500255"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26500255/thumbnail" width="100%" alt="cards visualization" /></noscript></div>
+
+VISUALIZACIÓN: Países que más se repiten 
+
+<div class="flourish-embed flourish-hierarchy" data-src="visualisation/26592613"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26592613/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
+
+VISUALIZACIÓN: DIFERENCIACIÓN POR GÉNERO
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Estrellas</title>
+
+<style>
+    body {
+        font-family: Futura, sans-serif;
+        background: #fafafa;
+        text-align: center;
+        padding-top: 40px;
+        height: 200vh; /* <-- para permitir scroll */
+    }
+
+    #initialBlock {
+        margin-bottom: 10px;
+    }
+
+    #bigStar {
+        font-size: 90px;
+        color: #7E4782;
+        animation: fadeIn 1s ease-out forwards;
+    }
+
+    #initialText {
+        margin-top: 5px;
+        font-size: 20px;
+        opacity: 0;
+        animation: fadeIn 1.2s ease-out forwards 0.3s;
+    }
+
+    #starsContainer {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .star {
+        font-size: 18px;
+        opacity: 0;
+        animation: appear 0.4s forwards ease-out;
+        margin: 4px;
+    }
+
+    #finalText {
+        margin-top: 40px;
+        opacity: 0;
+    }
+
+    .final-title {
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .legend {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    /* ANIMACIONES */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeOut {
+        from { opacity: 1; }
+        to   { opacity: 0; }
+    }
+
+    @keyframes appear {
+        from { opacity: 0; transform: scale(0.6); }
+        to   { opacity: 1; transform: scale(1); }
+    }
+</style>
+
+</head>
+<body>
+
+<!-- ESTRELLA GRANDE + FRASE -->
+<div id="initialBlock">
+    <div id="bigStar">★</div>
+    <div id="initialText">Cada estrella representa a un artista</div>
+</div>
+
+<!-- CONTENEDOR DE LAS 259 ESTRELLAS -->
+<div id="starsContainer"></div>
+
+<!-- TEXTO FINAL -->
+<div id="finalText"></div>
+
+
+<script>
+/* DATOS */
+const total = 259;
+const hombres = 196;
+const mujeres = 42;
+const mixtos = 21;
+
+const colors = {
+    hombre: "#EB008B",
+    mujer: "#7E4782",
+    mixto: "#8FA3CC"
+};
+
+const starsContainer = document.getElementById("starsContainer");
+const finalText = document.getElementById("finalText");
+
+/* OCULTAR ESTRELLA INICIAL */
+function hideInitialBlock() {
+    const big = document.getElementById("bigStar");
+    const text = document.getElementById("initialText");
+    big.style.animation = "fadeOut 0.6s forwards";
+    text.style.animation = "fadeOut 0.6s forwards";
+
+    setTimeout(() => {
+        document.getElementById("initialBlock").style.display = "none";
+    }, 600);
+}
+
+/* AGREGAR LAS 259 ESTRELLAS */
+function addStar() {
+    for (let i = 0; i < total; i++) {
+        setTimeout(() => {
+            const star = document.createElement("div");
+            star.classList.add("star");
+            star.textContent = "★";
+
+            if (i < hombres) star.style.color = colors.hombre;
+            else if (i < hombres + mujeres) star.style.color = colors.mujer;
+            else star.style.color = colors.mixto;
+
+            starsContainer.appendChild(star);
+
+        }, (i / total) * 3000); // 3 segundos total
+    }
+}
+
+/* TEXTO FINAL */
+function showFinalText() {
+    finalText.innerHTML = `
+        <div class="final-title">259 artistas</div>
+        <div class="legend">
+            Desde 1960, en el Festival se han presentado:<br><br>
+            <span style="color:#EB008B;">● ${hombres} hombres</span><br>
+            <span style="color:#7E4782;">● ${mujeres} mujeres</span><br>
+            <span style="color:#8FA3CC;">● ${mixtos} proyectos mixtos</span>
+        </div>
+    `;
+    finalText.style.animation = "fadeIn 1.8s forwards";
+}
+
+/* SECUENCIA COMPLETA */
+function startSequence() {
+    hideInitialBlock();
+    addStar();
+
+    const totalTime = (3 + 0.3) * 1000;
+
+    setTimeout(() => {
+        showFinalText();
+    }, totalTime);
+}
+
+/* ACTIVAR CON SCROLL UNA SOLA VEZ */
+let triggered = false;
+
+window.addEventListener("scroll", () => {
+    if (!triggered) {
+        triggered = true;
+        startSequence();
+    }
+});
+</script>
+
+</body>
+</html>
+
+
+
+VISUALIZACIÓN: GAVIOTAS Y ANTORCHAS 
+*Le cambiamos el color pero no me deja correr la visualización ahora
+por un error de colab, pero este es el mismo gráfico. 
+
+import altair as alt
+import pandas as pd
+
+data = {
+    "año": [2025, 2024, 2023, 2020, 2019, 2018, 2017, 2016,
+            2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008,
+            2007, 2006, 2005, 2004, 2003, 2002],
+    "gaviota": [27, 24, 24, 24, 24, 26, 29, 24, 30, 34, 29, 20, 14, 9, 12, 12, 9, 8, 9, 23, 4, 4],
+    "antorcha": [None, None, None, None, None, None, None, None,
+                 None, 34, 32, 32, 28, 20, 15, 32, 32, 36, 44, 38, 23, 15]
+}
+
+df = pd.DataFrame(data)
+
+df_melted = df.melt('año', var_name='variable', value_name='valor')
+
+chart = alt.Chart(df_melted).mark_area(opacity=0.7).encode(
+    x=alt.X('año:O', title='Año'),
+    y=alt.Y('valor:Q', title='Cantidad'),
+    color=alt.Color('variable:N', title='Categoría',
+                    scale=alt.Scale(scheme='category10'))
+).properties(
+    title='Evolución de Gaviotas y Antorchas',
+    width=600,
+    height=350
+)
+chart
