@@ -20,3 +20,6 @@ Con nuestras secciones buscamos que el lector pueda ir avanzando de lo más gran
 
 ### Decisiones sobre elementos visuales: ¿De qué manera el logo, los colores, tipografías, videos y/o fotos constituyen parte del significado de su historia?
 
+Todo lo que utilizamos en nuestra página, desde los colores hasta la tipografía e imágenes, buscan apelar al Festival de Viña para que el lector se sitúe en todo momento en el contexto del certamen.
+
+Partiendo con nuestro logo, este es una gaviota uno de los elementos más reconocibles del festival. Por su parte las fotografías buscan acompañar de forma visual lo que vamos contando, por eso cuando hablamos de los inicios de viña aparecen imágenes de las primeras ediciones de este, así el lector no solo depende de lo que lee para comprender cómo era antiguamente sino que también cuenta con el apoyo visual. 
