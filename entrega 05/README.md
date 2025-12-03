@@ -22,3 +22,9 @@ También, en nuestro reportaje incluiremos micro historias, como la brecha de g�
 ### Análisis de Hipótesis: ¿lograron demostrar su hipotesis inicial? ¿Cómo evolucionó a lo largo del trabajo?
 
 Nuestra hpótesis ha ido evolucionando a lo largo del semestre. Partimos con la idea de que el festival funciona como una vitrina para los artistas que se presentan, pero después la especificamos a cantantes latinoaméricanos. Sin embargo, luego nos dimos cuenta de que no solo funciona como una vitrina para mostrar nuevos talentos a un público que no los conocía, sino que también ayuda a que aquellos que ya cuentan con una trayectoria importante a consolidarse dentro y fuera de Chile. 
+
+### Para considerar
+
+En la realización de nuestra página web tuvimos que distribuirnos las tareas de una forma muy específica. Como dice en nuestra tabla de autoría Paloma realizó todos los gráficos y dibujos y yo (Edel) me encargué de subir todo a la página web, ordenar los códigos y realizar los párrafos explicativos. 
+
+Esto es porque en entregas pasadas hemos tenido problemas cada vez que Paloma sube algo a Github (se nos borran cosas que ya subimos), así que decidimos no arriesgarnos y dejar que solo yo (Edel) trabaje en la programación. Pero queríamos dejar super claro que esto no significa que una trabajó más que la otra ya que todo lo realizamos en conjunto y Paloma se preocupaba de mandar todos los códigos de los gráficos ya listo para copiar y pegar. 
