@@ -2,7 +2,7 @@
 
 ### Titular del reportaje
 
-
+El Monstruo es Latino
 
 ### Resumen de su reportaje, ¿de qué se trata la historia?
 
