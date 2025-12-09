@@ -23,3 +23,9 @@ En conjunto, los datos muestran que Viña del Mar es más que un festival, sino 
 Con este reportaje pudimos comprobar nuestra hipótesis en cierta medida, ya que el Festival de Viña sí impulsa la carrera de los artistas que se presentan y eso se ve reflejado en los tops que analizamos y en cómo luego de su paso por el evento los cantantes ingresan o suben en dichos rankings. Pero también nos dimos cuenta de no funciona para todos por igual, por eso a lo largo del curso nuestra hipótesis fue evolucionando, ya que notamos que a quienes más parece tener este efecto de consagración es a los artistas latinoamericanos. 
 
 Por eso nuestra hipótesis se enfocó más en la idea de que el festival sí funciona como un espacio de visibilización y consagración para quienes se presentan, pero específicamente para los artistas latinoamericanos y aquellos que apuntan (con suestilo musical o público objetivo) a la audiencia de América Latina.
+
+# Tabla de Autoría 
+
+Las X representan los aspectos en los que trabajo cada una. 
+
+![alt text](<Captura de pantalla 2025-12-09 185627.png>)
