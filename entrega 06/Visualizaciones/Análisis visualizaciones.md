@@ -43,18 +43,18 @@ Lo hicimos con FLOURISH
 Busca concluir la investigación, mostrando la diferencia en números de los artistas invitados que hablan inglés vs los que hablan español, mostrando que se repiten más los que tienen nuestro mismo idioma. 
 
 ## VISUALIZACIÓN: DIFERENCIACIÓN POR GÉNERO
-Lo hicimos con ...
+Lo hicimos con 
 
 SUBHISTORIA - Muestra los artistas que se han presentado diferenciados por género femenino, masculino o mixto, mostrando la brecha que existe. 
 
 ## VISUALIZACIÓN: DIFERENCIA POR GÉNERO + EVOLUCIÓN POR AÑOS
 
-Lo hicimos con...
+Lo hicimos con Vega Altair
 
 Este gráfico busca mostrar como ha ido evolucionando la brecha de género a lo largo de los años en los que se ha desarrollado el festival. Demostrando que, aunque ha disminuido, aun sigue muy presente. 
 
 ## VISUALIZACIÓN: GAVIOTAS Y ANTORCHAS 
 
-Lo hicimos con...
+Lo hicimos con Vega Altair
 
 SUBHISTORIA - Muestra la cantidad de gaviotas y antorchas que se han entregado y su disminución, lo que descarta el mito de la baja exigencia del festival.
