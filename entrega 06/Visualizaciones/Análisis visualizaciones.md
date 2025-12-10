@@ -43,7 +43,7 @@ Lo hicimos con FLOURISH
 Busca concluir la investigación, mostrando la diferencia en números de los artistas invitados que hablan inglés vs los que hablan español, mostrando que se repiten más los que tienen nuestro mismo idioma. 
 
 ## VISUALIZACIÓN: DIFERENCIACIÓN POR GÉNERO
-Lo hicimos con 
+Lo hicimos directamente con Javascript con la ayuda de Inteligencia Artificial. 
 
 SUBHISTORIA - Muestra los artistas que se han presentado diferenciados por género femenino, masculino o mixto, mostrando la brecha que existe. 
 
