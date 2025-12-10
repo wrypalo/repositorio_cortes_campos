@@ -6,61 +6,123 @@
    
 }
 
-body {
-    font-family: "Futura", sans-serif;
-    padding-top: 80px;
-}
 
     /* básico para que el menú fijo no tape el contenido */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: "Futura", sans-serif;
-      background-color: #97A8D2;
-      padding-top: 84px; /* ajusta según la altura real de tu top-bar */
-    }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Futura", sans-serif;
+  padding-top: 84px;
+  transition: background-color 0.8s ease;
+  background-color: #8fa3cc; /* color inicial */
+}
 
-    /* BARRA SUPERIOR */
-    .top-bar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 12px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      background-color: rgba(151,168,210,0.85);
-      backdrop-filter: blur(4px);
-      z-index: 999;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    }
+/* TODAS las secciones deben ser transparentes */
+.seccion {
+  min-height: 100vh;
+  scroll-margin-top: 84px; /* tu menú fijo */
+}
 
-    .btn {
-      background-color: #97A8D2;
-      border: 2px solid #7C8EB3;
-      padding: 12px 20px;
-      border-radius: 14px;
-      font-size: 17px;
-      cursor: pointer;
-      color: white;
-      font-weight: bold;
-    }
+/* Barra superior */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(151,168,210,0.85);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
 
-    .logo-btn {
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #97A8D2;
-      border-radius: 14px;
-      border: none;
-    }
+/* Contenedor de la línea */
+.linea-scroll {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
 
-    .icono {
-      height:150px; 
-      width: auto;
-    }
+/* Línea */
+.linea-scroll::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  height: 3px;
+  background-color: #eb008b;
+  border-radius: 3px;
+}
+
+/* Logo que se mueve */
+.icono-lateral {
+  height: 90px;
+  width: auto;
+  position: relative;
+  z-index: 10;
+  transition: transform 0.15s linear;
+}
+
+.brillito {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+  animation: sparkle 0.8s ease-out forwards;
+  opacity: 0.9;
+}
+
+/* Forma de estrellita usando sombras */
+.brillito::before,
+.brillito::after {
+  content: "";
+  position: absolute;
+  background: gold;
+  border-radius: 2px;
+}
+
+/* Línea vertical */
+.brillito::before {
+  width: 3px;
+  height: 14px;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+/* Línea horizontal */
+.brillito::after {
+  width: 14px;
+  height: 3px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* Animación */
+@keyframes sparkle {
+  0% {
+    transform: scale(0.4) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.6) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.icono-meta {
+  position: absolute;
+  right: 20px;
+  height: 70px;
+  width: auto;
+  top: 20px;
+  z-index: 5;
+}
 
     /* Layout principal */
     .contenido {
@@ -80,7 +142,7 @@ body {
 
     /* PREVIEW NOTICIA */
     .preview-noticia {
-      max-width: 900px;
+      max-width: 700px;
       margin: 30px auto;
       padding: 0;
       background: white;
@@ -190,32 +252,63 @@ body {
     margin: 0 auto;    /* centra horizontalmente */
 }
 
-
-.separador-antorcha {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin: 300px auto;
+.pregunta.destacada {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #7e4782;
+  text-align: center;
+  margin: 300px 0;
+  margin-top: 300px;
+  margin-bottom: 300px;
+  text-transform: uppercase;
 }
 
-.separador-antorcha img {
-  width: 80px;
-  height: auto;
-}
-
-.inicios-viña {
-  max-width: 900px;
-  margin: 0 auto;
+.parrafo.intro.nacionalidades {
+  max-width: 900px;       /* limita el ancho del bloque */
+  margin: 100px auto;     /* centra horizontalmente y separa verticalmente */
   padding: 20px 40px;
   font-family: "Futura", sans-serif;
   line-height: 1.6;
   font-size: 18px;
-  text-align: justify; /* el bloque ya está centrado gracias al margin */
+  text-align: justify;    /* justifica el texto dentro del div */
+  color: black;
 }
 
+.grafico.nacionalidades {
+  width: 50%;   /* ajusta este porcentaje según el tamaño que quieras */
+  margin: 0 auto; /* lo centra */
+}
+
+
+.analisis.grafico.nacionalidades {
+  max-width: 900px;       /* limita el ancho del bloque */
+  margin: 100px auto;     /* centra horizontalmente y separa verticalmente */
+  padding: 20px 40px;
+  font-family: "Futura", sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  text-align: justify;    /* justifica el texto dentro del div */
+  color: black;
+}
+
+
+.inicios-viña {
+    text-align: center; /* centra el texto dentro del div */
+  max-width: 900px;   /* opcional: limita ancho para que se vea mejor */
+  margin: 0 auto;     /* centra el div en la página si tiene ancho menor al contenedor */
+  margin-top: 70px;
+  margin-bottom: 100px;
+  text-align: justify;
+  padding: 20px 40px; 
+  font-family: "Futura", sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  color: black;
+}
+
+
 .imagen-viña-antiguo img {
-    width: 700px;       /* tamaño de la imagen */
+    width: 500px;       /* tamaño de la imagen */
     max-width: 100%;    /* para que se adapte en móviles */
     height: auto;       /* mantiene proporción */
     border-radius: 10px;
@@ -231,6 +324,7 @@ body {
   line-height: 1.6;
   font-size: 18px;
   text-align: justify;    /* justifica el texto dentro del div */
+  color: antiquewhite;
 }
 
 
@@ -244,10 +338,6 @@ body {
   text-align: justify;    /* justifica el texto dentro del div */
 }
 
-body {
-    background: #97A8D2 !important;
-}
-
 .grafico-generos {
   max-width: 400px;   /* AJUSTA ESTE VALOR según el tamaño que quieras */
   margin: 0 auto;      /* lo centra */
@@ -259,12 +349,12 @@ body {
 }
 
 
-.parrafo.analisi.genero{
+.parrafo.analisis.grafico.generos{
   text-align: center; /* centra el texto dentro del div */
   max-width: 900px;   /* opcional: limita ancho para que se vea mejor */
   margin: 0 auto;     /* centra el div en la página si tiene ancho menor al contenedor */
   margin-top: 70px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   text-align: justify;
   padding: 20px 40px; 
   font-family: "Futura", sans-serif;
@@ -299,25 +389,249 @@ body {
   font-size: 18px;
 }
 
-
-.grafico-estrellas {
-  position: relative; /* importantísimo */
-  margin-top: 120px !important;
-  margin-bottom: 120px !important;
+.grafico-artistas-totales {
+    display: flex;
+    justify-content: center;   /* centra horizontalmente */
+    margin: 40px 0;            /* separación arriba y abajo */
 }
 
-.grafico-artistas-totales {
+.grafico-artistas-totales .flourish-embed {
+    width: 80%;          /* ACHICA el gráfico (prueba 70%, 60%, etc.) */
+    max-width: 700px;    /* límite máximo */
+    margin: 0 auto;      /* por si acaso */
+}
 
-  text-align: center; /* centra el texto dentro del div */
-  max-width: 400px;   /* opcional: limita ancho para que se vea mejor */
-  margin: 0 auto;     /* centra el div en la página si tiene ancho menor al contenedor */
-  margin-top: 70px;
-  margin-bottom: 50px;
-  text-align: justify;
-  padding: 20px 40px; 
+.separador.lira img {
+    width: 100px;       /* tamaño de la imagen */
+    display: block;     /* necesario para centrar con margin */
+    margin: 100px auto  
+}
+
+.seccion {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.seccion p:last-child {
+  margin-bottom: 0;
+}
+
+.parrafo.tv.y.streaming {
+  max-width: 900px;       /* limita el ancho del bloque */
+  margin: 100px auto;     /* centra horizontalmente y separa verticalmente */
+  padding: 20px 40px;
   font-family: "Futura", sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  text-align: justify;    /* justifica el texto dentro del div */
+  color: antiquewhite;
 }
 
+.parrafo.top {
+  max-width: 900px;       /* limita el ancho del bloque */
+  margin: 50px auto;     /* centra horizontalmente y separa verticalmente */
+  padding: 20px 40px;
+  font-family: "Futura", sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  text-align: justify;    /* justifica el texto dentro del div */
+  color: antiquewhite;
+}
 
+.grafico img {
+    width: 500px;       /* tamaño de la imagen */
+    display: block;     /* necesario para centrar con margin */
+    margin: 100px auto;
+}
+
+.carrusel {
+  width: 1000px;       /* tamaño base del gráfico */
+  max-width: 100%;
+  margin: 0 auto;      /* centra horizontalmente */
+  display: flex;
+  justify-content: center;
+}
+
+.carrusel .flourish-embed {
+  transform: scale(0.75);   /* achica el gráfico (0.75 = 75%) */
+  transform-origin: top center;
+  width: 1000px !important; /* necesario para que el scale funcione */
+  max-width: 1000px !important;
+  margin-bottom: 20px !important;
+}
+
+.carrusel-wrapper {
+  transform: scale(0.80);   /* achica el tamaño total */
+  transform-origin: top center;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  margin: 0 auto;
+}
+
+.carrusel-wrapper .flourish-embed {
+  width: 1000px !important; /* tamaño base para que el scale funcione bien */
+  max-width: 1000px !important;
+  margin-bottom: 20px !important;
+}
+
+.grafico-latinos {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* centra todo */
+  margin: 0 auto;
+}
+
+.grafico-latinos .flourish-embed {
+  transform: scale(0.75); /* achicar */
+  transform-origin: top center;
+  width: 1000px !important; /* base del gráfico */
+  max-width: 1000px;
+  margin-bottom: 20px;
+}
+
+.grafico-evolucion-brecha img {
+    width: 700px;       /* tamaño de la imagen */
+    display: block;     /* necesario para centrar con margin */
+    margin: 100px auto;
+}
+
+.grafico-premios img {
+    width: 700px;       /* tamaño de la imagen */
+    display: block;     /* necesario para centrar con margin */
+    margin: 100px auto; 
+}
+
+.parrafo.brecha {
+  max-width: 900px;       /* limita el ancho del bloque */
+  margin: 100px auto;     /* centra horizontalmente y separa verticalmente */
+  padding: 20px 40px;
+  font-family: "Futura", sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  text-align: justify;    /* justifica el texto dentro del div */
+  color: black;
+}
+
+/* ⭐ CONTENEDOR DE LAS ESTRELLAS */
+#starsContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centra horizontalmente */
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ⭐ ESTILOS DE CADA ESTRELLA */
+.star {
+    font-size: 18px;
+    opacity: 0;
+    animation: appear .4s forwards ease-out;
+    margin: 4px;
+}
+
+/* ⭐ BLOQUE SUPERIOR */
+#initialBlock {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#bigStar {
+    font-size: 90px;
+    color: #7E4782;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+#initialText {
+    margin-top: 5px;
+    font-size: 20px;
+    opacity: 0;
+    animation: fadeIn 1.2s ease-out forwards 0.3s;
+}
+
+#finalText {
+    margin-top: 40px;
+    opacity: 0;
+    text-align: center;
+}
+
+/* ⭐ Animaciones */
+@keyframes fadeIn {
+    from { opacity:0; transform:translateY(10px); }
+    to { opacity:1; transform:translateY(0); }
+}
+@keyframes fadeOut {
+    from { opacity:1; }
+    to { opacity:0; }
+}
+@keyframes appear {
+    from { opacity:0; transform:scale(0.6); }
+    to { opacity:1; transform:scale(1); }
+}
+
+.separador-antorcha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 80px auto;
+}
+
+.separador-antorcha img {
+  width: 80px;
+  height: auto;
+}
+
+.parrafo.premios {
+  max-width: 900px;       /* limita el ancho del bloque */
+  margin: 100px auto;     /* centra horizontalmente y separa verticalmente */
+  padding: 20px 40px;
+  font-family: "Futura", sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  text-align: justify;    /* justifica el texto dentro del div */
+  color: black;
+}
+
+.tweet img {
+    width: 700px;       /* tamaño de la imagen */
+    display: block;     /* necesario para centrar con margin */
+    margin: 100px auto;
+}
+
+.foto.evolucion img {
+    width: 900px;       /* tamaño de la imagen */
+    display: block;     /* necesario para centrar con margin */
+    margin: 100px auto;
+}
+
+.parrafo.destacado {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #7e4782;
+  text-align: center;
+  margin: 300px auto;      /* <-- auto centra el bloque real */
+  text-transform: uppercase;
+  max-width: 800px;        /* <-- controla el ancho para que el centrado funcione */
+  display: block;          /* <-- asegura que se comporte como bloque centrable */
+}
+
+.parrafo.final {
+  max-width: 900px;       /* limita el ancho del bloque */
+  margin: 50px auto;     /* centra horizontalmente y separa verticalmente */
+  padding: 20px 40px;
+  font-family: "Futura", sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  text-align: justify;    /* justifica el texto dentro del div */
+  color: antiquewhite;
+}
+
+.foto.final img {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    transform: translateX(20px); /* mueve a la derecha o izquierda */
+}

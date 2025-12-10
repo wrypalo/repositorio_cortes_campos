@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="es">
-<head>
-  <meta charset="utf-8"/>
-  <title>Reportaje Festival de Viña del Mar</title>
 
-  <!-- tu CSS principal -->
+<head>
+  <meta charset="utf-8" />
+  <title>El "Monstruo" es Latino</title>
+
   <link rel="stylesheet" href="style.css">
 
   <link rel="icon" type="image.png" href="favicon.png">
@@ -13,222 +13,310 @@
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-
 </head>
+
+
 <body>
 
   <!-- MENÚ SUPERIOR -->
-  <nav class="top-bar">
-    <button class="logo-btn">
-      <img src="logo.png" class="icono" alt="Logo">
-    </button>
 
-    <button class="btn">Inicio</button>
-    <button class="btn">Historia del festival</button>
-    <button class="btn">Análisis artistas</button>
-    <button class="btn">Análisis tops</button>
-  </nav>
+<nav class="top-bar">
+  <div class="linea-scroll">
+    <img src="logo.png" class="icono-lateral" alt="Logo móvil">
+  </div>
 
+  <img src="quinta vergara si.png" class="icono-meta" alt="quinta vergara">
 
-  <!-- CONTENIDO -->
+</nav>
+
+  <!-- CONTENEDOR PRINCIPAL -->
   <main class="contenido">
 
-  <div class="foto-inicial">
-    <img src="inicio.png" alt="foto inicio">
-  </div>
+   <section class="seccion seccion-1" data-color="#8fa3cc">
 
-<div class="parrafo inicio">
-  <p>Para comprobar esta teoría recopilamos datos de las 65 ediciones del Festival de Viña del Mar realizadas entre 1960 y 2025, considerando variables como nacionalidad, género musical, artistas invitados, premios recibidos, entre otras. Durante este proceso, comenzaron a aparecer algunos patrones</p>
-  <p>Desde que se creó el festival en 1960 han participado más de 857 artistas, aunque si no se cuenta a quienes han vuelto más de una vez, este número se reduce a 259.  </p>
-</div>
-
-  <div class="grafico-artistas-totales">
-    <div class="flourish-embed flourish-scatter" data-src="visualisation/26570882"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26570882/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
-  </div>
-
-  <div class="parrafo shakira">
-
-<p>El hecho de que tantos intérpretes regresen a Viña nos hizo pensar que el certamen tiene una relevancia en las carreras de aquellos artistas que se presentan en la Quinta Vergara.</p>
-
- <p>Un ejemplo de esto es Shakira, quien ha reconocido públicamente la importancia que tuvo el Festival de Viña del Mar en su trayectoria artística, especialmente en sus primeros años de internacionalización.
- 
- </div>
-
-    <!-- PREVIEW NOTICIA -->
-    <div class="preview-noticia" aria-label="Preview noticia">
-      <a href="https://www.13.cl/programas/entretencion/todos-a-vina/shakira-recalco-la-importancia-del-festival-de-vina-en-su" target="_blank" rel="noopener noreferrer">
-        <img src="shakira-3.jpg" alt="Shakira noticia preview">
-        <div class="card-body">
-          <h3>Shakira recalcó la importancia del Festival de Viña en su carrera</h3>
-          <p>La cantante reconoció que Viña fue un punto decisivo en su camino como artista…</p>
-        </div>
-      </a>
-    </div>
-
-    <!-- Ejemplo de botón centrado si lo quieres -->
-    <div class="boton-centro">
-      <a class="boton-link" href="https://www.13.cl/programas/entretencion/todos-a-vina/shakira-recalco-la-importancia-del-festival-de-vina-en-su" target="_blank" rel="noopener noreferrer">
-        Leer noticia completa
-      </a>
-    </div>
-
-
-<div class="imagen-viña">
-        <img src="viña.png" alt="lira">
+      <div class="foto-inicial">
+        <img src="inicio.png" alt="foto inicio">
       </div>
 
+    </section>
 
-<div class="parrafo vitrina">
+  <section class="seccion seccion-2" data-color="#97A8D2">
+      <div class="parrafo inicio">
+        <p>Para comprobar esta teoría recopilamos datos de las 65 ediciones del Festival de Viña del Mar realizadas entre 1960 y 2025, considerando variables como nacionalidad, género musical, artistas invitados, premios recibidos, entre otras. Durante este proceso, comenzaron a aparecer algunos patrones.</p>
 
-  <p>El Festival de Viña del Mar funciona como un impulso estratégico para los artistas, ya que les otorga una visibilidad única y no solo a nivel nacional, sino que también internacional. Para muchos intérpretes, participar en el festival representa una oportunidad de mostrar su talento frente a audiencias masivas y de acercarse a medios y públicos que difícilmente alcanzarían por otros canales. Según el balance realizado por la organización de Viña 2025, más de 250 millones de personas de todo el mundo vieron el contenido del festival y la competencia internacional fue la más vista de los últimos seis años. </p>
+        <p>Desde que se creó el festival en 1960 han participado más de 857 artistas, aunque si no se cuenta a quienes han vuelto más de una vez, este número se reduce a 259.</p>
+      </div>
 
-<p>Pero Viña no solo sirve como plataforma que da visibilización a nuevos artistas, también actúa como un espacio de consagración para aquellos cantantes que ya cuentan con popularidad previa. De hecho, varios intérpretes regresan más de una vez al escenario de la Quinta Vergara, una señal de que el festival no solo los acoge, sino que también reafirma su vigencia y su vínculo con el público chileno. En este contexto, Viña valida su reconocimiento, refuerza su presencia en la memoria colectiva y consolida su éxito dentro de la cultura popular. Así, el evento combina simultáneamente la proyección de nuevos talentos con la afirmación de figuras ya establecidas, cumpliendo un doble rol en la industria musical y en la construcción de referentes culturales.</p>
+      <div class="grafico-artistas-totales">
+        <div class="flourish-embed flourish-scatter" data-src="visualisation/26570882">
+          <script src="https://public.flourish.studio/resources/embed.js"></script>
+        </div>
+      </div>
 
+      <div class="parrafo shakira">
+        <p>El hecho de que tantos intérpretes regresen a Viña nos hizo pensar que el certamen tiene una relevancia en las carreras de aquellos artistas que se presentan en la Quinta Vergara.</p>
+
+        <p>Un ejemplo de esto es Shakira, quien ha reconocido públicamente la importancia que tuvo el Festival de Viña del Mar en su trayectoria artística, especialmente en sus primeros años de internacionalización.</p>
+      </div>
+
+      <div class="preview-noticia">
+        <a href="https://www.13.cl/programas/entretencion/todos-a-vina/shakira-recalco-la-importancia-del-festival-de-vina-en-su" target="_blank">
+          <img src="shakira-3.jpg" alt="Shakira noticia preview">
+          <div class="card-body">
+            <h3>Shakira recalcó la importancia del Festival de Viña en su carrera</h3>
+            <p>La cantante reconoció que Viña fue un punto decisivo en su camino como artista</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="boton-centro">
+        <a class="boton-link" href="https://www.13.cl/programas/entretencion/todos-a-vina/shakira-recalco-la-importancia-del-festival-de-vina-en-su" target="_blank">
+          Leer noticia completa
+        </a>
+      </div>
+
+      <div class="imagen-viña">
+        <img src="viña.png" alt="viña lira">
+      </div>
+
+      <div class="parrafo vitrina">
+        <p>El Festival de Viña del Mar funciona como un impulso estratégico para los artistas, ya que les otorga una visibilidad única y no solo a nivel nacional, sino que también internacional. Para muchos intérpretes, participar en el festival representa una oportunidad de mostrar su talento frente a audiencias masivas y de acercarse a medios y públicos que difícilmente alcanzarían por otros canales. Según el balance realizado por la organización de Viña 2025, más de 250 millones de personas de todo el mundo vieron el contenido del festival y la competencia internacional fue la más vista de los últimos seis años. </p>
+
+        <p>Pero Viña no solo sirve como plataforma que da visibilización a nuevos artistas, también actúa como un espacio de consagración para aquellos cantantes que ya cuentan con popularidad previa. De hecho, varios intérpretes regresan más de una vez al escenario de la Quinta Vergara, una señal de que el festival no solo los acoge, sino que también reafirma su vigencia y su vínculo con el público chileno. En este contexto, Viña valida su reconocimiento, refuerza su presencia en la memoria colectiva y consolida su éxito dentro de la cultura popular. Así, el evento combina simultáneamente la proyección de nuevos talentos con la afirmación de figuras ya establecidas, cumpliendo un doble rol en la industria musical y en la construcción de referentes culturales.</p>
+      </div>
+
+      <div class="grafico cabezas">
+        <img src="GRAFICO PERSONAS.png" alt="gráfico personas">
+      </div>
+
+      <div class="parrafo analisis cabezas">
+        <p>Según los datos recopilados desde el inicio del festival en 1960 hasta su última versión en 2025, Ricardo Arjona es uno de los artistas que ha logrado consolidar su carrera en Chile. Su primera presentación en la Quinta Vergara fue en 1995 y, desde entonces, ha regresado en cinco ocasiones, lo que lo convierte en uno de los intérpretes con mayor presencia en el certamen. Sin embargo, no es el único con una presencia reiterada en el escenario: Luis Fonsi, Marc Anthony, Miguel Bosé y Alejandro Sanz también han estado en cinco ediciones. A ellos se suman otros 12 artistas, chilenos y extranjeros, que han participado en cuatro versiones del festival. </p>
+
+        <p>Esta recurrencia evidencia la conexión que estos intérpretes mantienen con el público chileno y la capacidad del Festival de Viña del Mar para convertirse en un espacio donde las carreras se fortalecen y adquieren una nueva dimensión. El regreso constante de figuras consolidadas revela que el certamen no funciona únicamente como vitrina para nuevos talentos, sino también como un escenario que renueva la vigencia de artistas ya establecidos, reforzando su vínculo con la audiencia local e internacional. </p>
+
+        <p>Asimismo, el patrón de repetición deja en evidencia que, más allá de la exigencia del “Monstruo”, quienes logran cautivarlo encuentran en la Quinta Vergara un lugar donde su carrera puede expandirse, diversificarse y mantenerse en la memoria colectiva. Con cada retorno, estos artistas reviven momentos icónicos y alimentan una tradición que ha marcado a varias generaciones.</p>
+      </div>
+
+      <div class="separador lira">
+        <img src="lira.png" alt="lira separador">
+      </div>
+
+      <div class="parrafo generos musicales">
+        <p>A partir de estos retornos, se evidencia que Viña no solo marca trayectorias individuales, sino que también configura tendencias dentro de la industria musical. Así como ciertos artistas vuelven una y otra vez al escenario de la Quinta Vergara, también hay estilos que permanecen firmemente instalados en la programación del festival. </p>
+
+        <p>Aunque han evolucionado con el tiempo y se han adaptado a los gustos populares de cada época, ciertos sonidos aparecen en la gran mayoría de las ediciones.</p>
+      </div>
+
+      <div class="grafico-generos">
+        <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/26504723"></div>
+      </div>
+
+      <div class="parrafo analisis grafico generos">
+        <p>En los datos analizados de todas las ediciones realizadas entre 1960 y 2025, la balada fue el género más recurrente, seguida del pop y el pop latino, que desde 1987 se instaló con fuerza en la Quinta Vergara. Ambos estilos son adoptados mayoritariamente por artistas hispanohablantes. Aunque Viña incluye intérpretes de habla inglesa, quienes ocupan un mayor espacio en el certamen siguen siendo los latinos. </p>
+
+        <p>Tras revisar estos datos, observamos que gran parte de los artistas que han pasado por el Festival de Viña del Mar comparten un vínculo con América Latina, ya sea por origen, recurrencia o estilo musical. A partir de esto surge la siguiente pregunta:</p>
+      </div>
+
+      <div class="pregunta destacada">
+        ¿El Festival de Viña del Mar funciona como un espacio de consagración principalmente para artistas latinoamericanos?
+      </div>
+
+      <div class="parrafo intro nacionalidades">
+        <p>El análisis de los datos revela una marcada inclinación hacia los artistas de habla hispana y latinoamericana, dejando en un segundo plano a los de habla inglesa. Después de Chile, las nacionalidades que más se repiten en las 65 ediciones del festival son España, México y Argentina. Estados Unidos se posiciona en cuarto lugar, mientras que países como Inglaterra ni siquiera logran entrar en el top 10.</p>
+      </div>
+
+        <div class="grafico nacionalidades">
+      <div class="flourish-embed flourish-hierarchy" data-src="visualisation/26592613"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26592613/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
+        </div>
+
+      <div class="analisis grafico nacionalidades">
+        <p>En el gráfico se puede observar que los países latinoamericanos conforman la mayor parte de la parrilla de artistas que participan en el certamen viñamarino, lo que reafirma que el Festival de Viña del Mar brinda un espacio a intérpretes de la región. Estos artistas son quienes logran aprovechar la plataforma para consolidar sus carreras musicales tanto en Chile como en los países vecinos.</p>
+      </div>
+
+      <div class="separador lira">
+        <img src="lira.png" alt="lira">
+      </div>
+
+      <div class="inicios-viña">
+        <p>Pero para comprender la importancia y trascendencia del Festival de Viña del Mar y por qué tiene un impacto tan significativo en la carrera de los artistas que se presentan en su escenario, hay que conocer dónde y cuándo nace.</p>
+      </div>
+
+  </section>
+  </main>
+
+  <section class="seccion seccion-3" data-color="#11102c">
+
+    <div class="imagen-viña-antiguo">
+      <img src="viña antiguo.png" alt="viña antiguo">
+    </div>
+
+    <div class="parrafo historia vina">
+<p>El Festival Internacional de la Canción de Viña del Mar nació en 1960 como una iniciativa para impulsar el turismo y darle a la ciudad una identidad cultural propia durante el verano. Su primera edición se realizó en el Parque Quinta Vergara y fue un evento sencillo con un escenario de madera, el público sentado en sillas plegables que ellos mismos debían llevar y una competencia centrada en artistas locales. Aun así, tuvo una buena recepción del público, lo que permitió pensar en continuar desarrollando y abrió el camino para su crecimiento. </p>
+<p>Sus inicios la mayoría de los artistas invitados eran parte del show estable del Casino Municipal de Viña del Mar. En su primera versión solo el humorista argentino Luis Sandrini y la cantante estadounidense Teal Joy eran artistas extranjeros que asistieron, ya que estaban se encontraban de paso por la ciudad.</p>
+<p>Sin embargo, con los años el festival siguió creciendo y logró expandirse gracias a la televisión, que intensificó su alcance y lo transformó en un referente latinoamericano. El certamen fue transmitido por primera vez por radio y televisión en 1963, por Radio Minería y Canal 9, pero esto se consolidó 3 años más tarde cuando el Canal 13 tomó su emisión. Con esto comenzaron a mejorar las condiciones en las que se realizaba el festival y se crearon, las ya tradicionales, competencias internacional y folclórica. Además, se modernizó la infraestructura del anfiteatro y comenzó a atraer a artistas de distintos países. </p>
+<p>El Festival de Viña del Mar es considerado como uno de los eventos musicales más importantes de Latinoamérica que llega a millones de personas tanto dentro como fuera de Chile y que reúne a importantes exponentes de distintos géneros musicales </p>
+<p>Este año se cumplen 65 años desde aquel primer show realizado en 1960, y un total de 259 artistas diferentes han pisado la Quinta Vergara, mostrando distintos estilos musicales que reflejan cada una de las épocas del festival. Ricky Martin, Kidd Voodoo, Christina Aguilera, The Police, Mon Laferte y Daddy Yankee son solo algunos de los artistas que han participado en este emblemático evento.</p>
+<p>Con tantos años de historia y una diversidad tan amplia de intérpretes, el festival no solo refleja la trayectoria de cada artista, sino también las dinámicas de la industria musical a lo largo del tiempo. </p>
+<p>Aunque, el Festival Internacional de la Canción de Viña del Mar no solo ha sido, durante más de seis décadas, el escenario donde artistas de toda América Latina y el mundo buscan consolidar sus carreras y darse a conocer a un público internacional más amplio. También es un espacio que refleja, año tras año, las tendencias, gustos y desigualdades que existen dentro de la industria musical. </p>
+<p>Viña del Mar tiene ese poder: llevar a lo más alto o derribar la carrera de los artistas que no logran conquistar al público. Es una vitrina, pero también una lupa. Y cuando se analizan los datos de los más de 800 artistas que han pasado por su escenario desde su creación en 1960, contándo aquellos que han vuelto a participar del evento, se revelan más cosas que historias individuales, se muestra un patrón.</p>
+    </div>
+  </section>
+
+  <section class="seccion seccion-4" data-color="#2e3566">
+
+
+    <div class="separador lira">
+        <img src="lira.png" alt="lira separador">
+    </div>
+
+  <div class="parrafo tv y streaming">
+    <p>Con el paso de los años y el avance de la tecnología, el Festival de Viña del Mar se ha adaptado a nuevas formas de emisión. Comenzó a transmitirse por televisión abierta en 1963, aunque al principio su cobertura era limitada y concentrada principalmente en Chile. Con el tiempo, la transmisión televisiva se consolidó a nivel nacional, llegando a audiencias de todo el país a través de Televisión Nacional de Chile (TVN) y posteriormente mediante otras casas televisivas. En la actualidad, el certamen ha ampliado su alcance gracias a plataformas de streaming como Disney+, lo que permite que su música, shows y artistas sean vistos en todos los países de Latinoamérica. </p>
+    <p>La edición 2025 fue seguida por 250 millones de personas, consolidando al festival como un referente musical internacional y una plataforma clave para proyectar la cultura y los artistas latinoamericanos a nivel global.</p>
+    <p>A pesar de reunir a artistas reconocidos y masivos ante millones de espectadores, solo una fracción logra traducir esa exposición en un impacto real en los rankings musicales. De las más de 300 presentaciones analizadas, solo el 14% de los artistas ha estado alguna vez en el Top 100 chileno, ya sea antes o después del festival. La gran mayoría (86%) no ha logrado ingresar a estas listas, lo que demuestra que la vitrina de Viña no garantiza éxito en plataformas digitales, aunque sí puede impulsar a quienes ya tienen una base de audiencia activa o logran conectar de inmediato con el público.</p>
+  
+  </div>
+
+  <div class="grafico">
+    <img src="1_de_cada_7-removebg-preview.png" alt="cantantes">
+  </div>
+
+  <div class="parrafo top">
+    <p>Solo 1 de cada 7 artistas llega a convertir la vitrina de Viña en un impacto directo en las listas más escuchadas del país</p>
+    <p>Además de los fenómenos que ya tenían presencia en los rankings nacionales antes de subir al escenario, el festival también impulsó a nuevos nombres hacia las listas más escuchadas del país. </p>
+    <p>Aunque la mayoría de los artistas ya llega al festival con una base de oyentes, Viña todavía tiene la capacidad de reimpulsar carreras y abrir puertas que habían estado cerradas. De los 321 artistas analizados, al menos 19 lograron ingresar al Top 100 chileno tras su paso por el escenario viñamarino, aun cuando sus nombres no aparecian en las listas más escuchadas del país.</p>
+  </div>
+
+    <div class="carrusel-wrapper">
+      <div class="flourish-embed flourish-cards" data-src="visualisation/26500255"></div>
+    </div>
+
+
+  <div class="parrafo top">
+    <p>De los que ya tenían presencia en tops previo a su show, un 72% subió en la lista, un 19% bajó luego de subir a la quinta y solo un 9% se mantuvo en el mismo número del top. Esto demuestra que la vitrina de Viña del Mar opera en dos direcciones: por un lado, refuerza la popularidad de quienes ya cuentan con una audiencia consolidada; por otro, abre un espacio clave para que artistas emergentes logren instalarse en el panorama musical chileno, convirtiendo su show en un punto de inflexión para su alcance y visibilidad.</p>
+    <p>Estos datos muestran que, si bien el festival no asegura éxito para todos por igual, sí representa un impulso real para una parte importante de los artistas, especialmente para aquellos que ya contaban con una base de seguidores activa o cuya propuesta conecta rápidamente con nuevas audiencias.</p>
+  </div>
+
+   <div class="carrusel">
+  <div class="flourish-embed flourish-cards" data-src="visualisation/26703183">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+  </div>
 </div>
 
-<div class="grafico cabezas">
-  <img src="GRAFICO PERSONAS.png" alt="grafico">
+  <div class="parrafo top">
+    <p>Un caso que demuestra el poder de la Quinta Vergara es Kidd Voodoo. Ya tenía fans, ya sonaba en los rankings y su público urbano lo seguía con devoción, pero Viña lo puso en la vitrina nacional. A la semana siguiente, Ponte Lokita llegó al número uno de las canciones más escuchadas del país y se mantuvo en el top 5 durante más de seis semanas. Desde ahí, su carrera escaló rápidamente: agotó siete Movistar Arena consecutivos y su nombre comenzó a sonar más allá de su público joven. Viña no aumentó sus números en TOPS drásticamente, pero sí amplificó su llegada, confirmando que el festival sigue funcionando como una plataforma que puede transformar visibilidad en éxito masivo.</p>
+    <p>A lo largo de sus 65 ediciones, el Festival de Viña del Mar ha sido un escenario mayoritariamente hispanohablante. De los 259 artistas que han participado en el show estelar, cerca del 77% provienen de países de habla hispana, mientras que el 23% restante corresponde principalmente a intérpretes angloparlantes u otros idiomas. Esto confirma que Viña, más que un festival “internacional” en términos globales, opera como una vitrina latinoamericana, donde la conexión cultural y lingüística con el público juega un rol decisivo en quiénes llegan —y, sobre todo, quiénes regresan.</p>
+
+  </div>
+
+<div class="grafico-latinos">
+  <div class="flourish-embed flourish-chart" data-src="visualisation/26702613">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+  </div>
 </div>
 
-<div class="parrafo analisis cabezas">
-  <p>Según los datos recopilados desde el inicio del festival en 1960 hasta su última versión en 2025, Ricardo Arjona es uno de los artistas que ha logrado consolidar su carrera en Chile. Su primera presentación en la Quinta Vergara fue en 1995 y, desde entonces, ha regresado en cinco ocasiones, lo que lo convierte en un ícono de la música popular en el país y en el artista que más veces ha participado en el certamen viñamarino. Sin embargo, no es el único con una presencia reiterada en el escenario: Luis Fonsi, Marc Anthony, Miguel Bosé y Alejandro Sanz también han estado en cinco ediciones. A ellos se suman otros 12 artistas, chilenos y extranjeros, que han participado en cuatro versiones del festival.</p>
-</div>
+  <div class="parrafo top">
+    <p>Esa predominancia no solo se refleja en la parrilla, sino también en los resultados posteriores a cada presentación. Entre los artistas que lograron subir o mantenerse en los rankings nacionales tras Viña, el 82% son hispanohablantes. Esto demuestra que la cercanía idiomática no solo favorece la recepción en vivo, sino también el consumo posterior de sus canciones: la visibilidad del festival se transforma en impacto real especialmente cuando el artista comparte el idioma, y, muchas veces, la identidad cultural, del público que lo escucha.</p>
+  </div>
 
-<div class="parrafo generos musicales">
+    <div class="separador lira">
+        <img src="lira.png" alt="lira separador">
+    </div>
 
-<p>Además de la repetición de artistas, los géneros musicales también muestran un patrón que se mantiene presente año a año. Aunque han evolucionado con el tiempo y se han adaptado a los gustos populares de cada época, ciertos sonidos aparecen en la gran mayoría de las ediciones.</p>
+  </section>
+  
+  <section class="seccion seccion-5" data-color="#97A8D2">
 
-</div>
+  <div class="parrafo destacado">
+    <p>Aunque Viña del Mar tiene el poder de impulsar a sus artistas, no todos reciben la misma oportunidad de brillar. El festival funciona como un espejo de la sociedad: históricamente, los hombres han concentrado la mayor visibilidad, mientras que las artistas femeninas han quedado en segundo plano</p>
+  </div>
 
-<div class="grafico-generos">
-  <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/26504723"></div>
-</div>
-
-<div class=" analisis grafico generos">
-  <p> blablabla</p>
-
-</div>
-
-<div class="separador-antorcha">
-    <img src="antorchas.png" alt="antorchas">
-    <img src="antorchas.png" alt="antorchas">
-    <img src="antorchas.png" alt="antorchas">
-</div>
-
-<div class="inicios-viña">
-
-<p> Pero para comprender la importancia y trascendencia del Festival de Viña del Mar hay que conocer dónde y cuándo nace. </p>
-
-</div>
-
-<div class="imagen-viña-antiguo">
-  <img src="viña antiguo.png" />
-</div>
-
-<div class="parrafo historia vina">
-<p> 
-El Festival Internacional de la Canción de Viña del Mar nació en 1960 como una iniciativa para impulsar el turismo y darle a la ciudad una identidad cultural propia durante el verano. Su primera edición se realizó en el Parque Quinta Vergara y fue un evento sencillo con  un escenario de madera, el público sentado en sillas plegables que ellos mismos debían llevar y una competencia centrada en artistas locales. Aun así, tuvo una buena recepción del público, lo que permitió pensar en continuar desarrollando y abrió el camino para su crecimiento. </p>
-
-<p>sus inicios la mayoría de los artistas invitados eran parte del show estable del Casino Municipal de Viña del Mar. En su primera versión solo el humorista argentino Luis Sandrini y la cantante estadounidense Teal Joy eran artistas extranjeros que asistieron, ya que estaban se encontraban de paso por la ciudad.</p>
-
-<p>Sin embargo, con los años el festival siguió creciendo y logró expandirse gracias a la televisión, que intensificó su alcance y lo transformó en un referente latinoamericano. El certamen fue transmitido por primera vez por radio y televisión en 1963, por Radio Minería y Canal 9, pero esto se consolidó 3 años más tarde cuando el Canal 13 tomó su emisión.
-Con esto comenzaron a mejorar las condiciones en las que se realizaba el festival y se crearon, las ya tradicionales, competencias internacional y folclórica. Además, se modernizó la infraestructura del anfiteatro y comenzó a atraer a artistas de distintos países. </p>  
-
-<p> el Festival de Viña del Mar es considerado como uno de los eventos musicales más importantes de Latinoamérica que llega a millones de personas tanto dentro como fuera de Chile y que reúne a importantes exponentes de distintos géneros musicales </p>
-
-<p>Este año se cumplen 65 años desde aquel primer show realizado en 1960, y un total de 857 artistas han pisado la Quinta Vergara, mostrando distintos estilos musicales que reflejan cada una de las épocas del festival. Ricky Martin, Kidd Voodoo, Christina Aguilera, The Police, Mon Laferte y Daddy Yankee son solo algunos de los artistas que han participado en este emblemático evento.</p>
-
-<p>Con tantos años de historia y una diversidad tan amplia de intérpretes, el festival no solo refleja la trayectoria de cada artista, sino también las dinámicas de la industria musical a lo largo del tiempo.
-</p>
-
-<p>Aunque, el Festival Internacional de la Canción de Viña del Mar no solo ha sido, durante más de seis décadas, el escenario donde artistas de toda América Latina y el mundo buscan consolidar sus carreras y darse a conocer a un público internacional más amplio. También es un espacio que refleja, año tras año, las tendencias, gustos y desigualdades que existen dentro de la industria musical.
-</p>
-
-<p>Viña del Mar tiene ese poder: llevar a lo más alto o derribar la carrera de los artistas que no logran conquistar al público. Es una vitrina, pero también una lupa. Y cuando se analizan los datos de los más de 800 artistas que han pasado por su escenario desde su creación en 1960, se revelan más cosas que historias individuales, se muestra un patrón.</p>
-
-</div>
-
-<div class="separador-antorcha">
-    <img src="antorchas.png" alt="antorchas">
-    <img src="antorchas.png" alt="antorchas">
-    <img src="antorchas.png" alt="antorchas">
-</div>
-
-
-
-<div class="grafico-estrellas">
-
-<style>
-    #initialBlock {
-        margin-bottom: 10px;
-        text-align: center;
-    }
-    #bigStar {
-        font-size: 90px;
-        color: #7E4782;
-        animation: fadeIn 1s ease-out forwards;
-    }
-    #initialText {
-        margin-top: 5px;
-        font-size: 20px;
-        opacity: 0;
-        animation: fadeIn 1.2s ease-out forwards 0.3s;
-    }
-    #starsContainer {
-        margin-top: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .star {
-        font-size: 18px;
-        opacity: 0;
-        animation: appear 0.4s forwards ease-out;
-        margin: 4px;
-    }
-    #finalText {
-        margin-top: 40px;
-        opacity: 0;
-        text-align: center;
-    }
-    .final-title {
-        font-size: 36px;
-        font-weight: 400;
-        margin-bottom: 10px;
-    }
-    .legend {
-        font-size: 18px;
-        line-height: 1.6;
-    }
-
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to   { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeOut {
-        from { opacity: 1; }
-        to   { opacity: 0; }
-    }
-    @keyframes appear {
-        from { opacity: 0; transform: scale(0.6); }
-        to   { opacity: 1; transform: scale(1); }
-    }
-</style>
+    <div class="parrafo brecha">
+      <p>El Festival Internacional de la Canción de Viña del Mar ha sido, durante más de seis décadas, el escenario donde artistas de América Latina y el mundo buscan consolidar sus carreras y mostrarse a un público internacional, reflejando también tendencias, gustos y desigualdades de la industria musical. Viña del Mar tiene ese poder: llevar a lo más alto o derribar la carrera de los artistas que no logran conquistar al público. Es una vitrina, pero también una lupa. Y cuando se analizan los datos de los más de 800 artistas que han pasado por su escenario desde su creación en 1960, se revelan más cosas que historias individuales: se muestra un patrón.</p>
+    </div>
 
 <div id="initialBlock">
-    <div id="bigStar">★</div>
-    <div id="initialText">Cada estrella representa a un artista</div>
+  <div id="bigStar">★</div>
+  <div id="initialText"> ¡Toca la estrella para descubrir más! (Cada estrella representa a un artista) </div>
 </div>
 
 <div id="starsContainer"></div>
 
 <div id="finalText"></div>
 
-<script>
-const total = 259;
+
+    <div class="parrafo brecha">
+      <p>Según los datos recopilados, aproximadamente el 73% de los artistas que se han presentado en Viña son hombres, mientras que solo el 19% corresponde a mujeres y solo un 8% a agrupaciones mixtas. Estos números dejan la situación clara: existe una brecha de género en el festival que no es menor, y aunque en los últimos años se han hecho esfuerzos por diversificar su parrilla, la desigualdad sigue siendo evidente. </p>
+      <p>Esa tendencia lleva a pensar que la vitrina de Viña no solo muestra, sino que también selecciona: define qué voces son amplificadas y cuáles quedan en segundo plano, dándole más espacio a un género por sobre otro. En un escenario donde cada presentación puede marcar un antes y un después, esa desigualdad se vuelve parte de la historia.</p>
+      <p>La tendencia, sin embargo, parece estar cambiando lentamente. En las últimas ediciones se ha visto un esfuerzo por incluir más voces femeninas y proyectos diversos: desde Mon Laferte y Denise Rosenthal, hasta artistas urbanas como Princesa Alba o Paloma Mami, quienes también representan nuevas formas de entender el éxito musical. Pero la proporción sigue siendo desigual, y eso plantea una pregunta inevitable: ¿de qué tipo de vitrina estamos hablando si no todos son invitados a participar en ella?</p>
+    </div>
+
+    <div class="grafico-evolucion-brecha">
+      <img src="evolución brecha.png" alt="brecha">
+    </div>
+  
+    <div class="parrafo brecha">
+      <p>Según el gráfico analizado, la presencia de artistas masculinos ha sido superior en casi todas las ediciones del festival, siendo la única excepción la versión de 2023, donde participaron seis mujeres y cinco hombres, superando apenas al género masculino. Sin embargo, en 2024 y 2025 la participación femenina volvió a disminuir, ampliando nuevamente la brecha existente.</p>
+    </div>
+
+    <div class="separador-antorcha">
+        <img src="antorchas.png" alt="antorcha separador">
+        <img src="antorchas.png" alt="antorcha separador">
+        <img src="antorchas.png" alt="antorcha separador">
+    </div>
+
+    <div class="parrafo destacado">
+      <p>Así como los números y evolución del certamen muestran una desigualdad en la presencia de hombres y mujeres, la historia de los premios del festival evidencia cómo se ha ido cambiando el panorama frente al reconocimiento que reciben aquellos que se presentan. </p>
+    </div>
+
+    <div class="parrafo premios">
+      <p>El Festival de Viña del Mar lleva más de 60 años realizándose y ha atravesado numerosos cambios a lo largo de su historia. Uno de los aspectos más emblemáticos y reconocidos por el público es la entrega de premios, los cuales también han evolucionado junto al certamen. Sin embargo, este aspecto no ha estado exento de críticas por parte de la audiencia.</p>
+    </div>
+
+    <div class="tweet">
+      <img src="tweet premios.png" alt="tweet">
+    </div>
+
+    <div class="parrafo premios">
+      <p>Al comienzo del festival los premios Lira y Arpa eran exclusivos para los ganadores del certamen, los artistas no recibían ningún tipo de reconocimiento más que el pisar el escenario viñamarino y ser vistos por cientos de personas.</p>
+      <p>El primer artista en ganar la clásica Gaviota de Plata fue el cantante Camilo Sesto. Tras reemplazar la Lira y el Arpa, se convirtió en el galardón símbolo del certamen. Luego surgió la Gaviota de Oro en 1999 iniciando una nueva etapa del festival. </p>
+      <p>Esa transformación se consolidó en la década de los noventa, cuando el público —el “Monstruo”— pudo premiar directamente a cantantes y humoristas del show estelar. En 1999 nació la Gaviota de Oro, marcando un nuevo periodo en que los galardones dejaron de ser exclusivos para los participantes oficiales</p>
+    </div>
+    
+    <div class="foto evolucion">
+      <img src="foto evoluvión.png" alt="evolucion">
+    </div>
+
+    <div class="parrafo premios">
+      <p>Todo ello impulsó el aumento de los premios entregados durante los 2000 y principios de 2010. Esa alza generó la crítica de que se estaban regalando gaviotas, especialmente en años como 2004 y 2014.</p>
+    </div>
+
+    <div class="grafico-premios">
+      <img src="grafico premios.png" alt="premios">
+    </div>
+
+    <div class="parrafo premios">
+      <p>Sin embargo, desde la eliminación definitiva de las antorchas en 2015, el número total de premios ha disminuido y se ha estabilizado. Aunque hoy se entregan más gaviotas que antes —porque son el único galardón oficial— el número de premios en general es menor y se mantiene en un promedio de 25 a 30 por edición, destinados a un grupo acotado de artistas.</p>
+    </div>
+  
+  </section>
+
+  <section class="seccion seccion-6" data-color="#11102c">
+
+    <div class="parrafo final">
+
+      <p>Después de más de seis décadas, el Festival de Viña del Mar sigue siendo una plataforma capaz de amplificar carreras, mover audiencias y marcar tendencias. Pero los datos demuestran que su impacto no es uniforme: mientras algunos artistas logran convertir su paso por la Quinta Vergara en un impulso real, otros apenas ven reflejada esa exposición en los rankings. Lo mismo ocurre con su supuesta internacionalidad, que en la práctica se alinea mucho más con la identidad latinoamericana que con un alcance global. </p>
+      <p>Al mismo tiempo, el festival también expone las desigualdades de la industria musical. La brecha de género, persistente a lo largo de toda su historia, revela que no todos han tenido el mismo acceso a esta vitrina ni las mismas posibilidades de brillar bajo sus reflectores. </p>
+      <p>Viña del Mar sigue siendo un escenario decisivo: un espacio donde se celebran éxitos, se evidencian desigualdades y se escribe, año tras año, una parte importante de la historia musical latinoamericana. Su futuro dependerá de qué tan capaz sea de adaptarse no solo a nuevas audiencias y formatos, sino también a las demandas de representación y equidad que hoy marcan el pulso cultural.</p>
+    </div>
+
+    <div class="foto final">
+      <img src="foto final.png" alt="final">
+    </div>
+    
+  </section>
+
+ <script>
+    const total = 259;
 const hombres = 196;
 const mujeres = 42;
 const mixtos = 21;
@@ -236,15 +324,19 @@ const mixtos = 21;
 const colors = {
     hombre: "#EB008B",
     mujer: "#7E4782",
-    mixto: "#8FA3CC"
+    mixto: "#2e3566"
 };
 
 const starsContainer = document.getElementById("starsContainer");
 const finalText = document.getElementById("finalText");
 
+/* ================================
+      1️⃣ OCULTAR BLOQUE INICIAL
+================================ */
 function hideInitialBlock() {
     const big = document.getElementById("bigStar");
     const text = document.getElementById("initialText");
+
     big.style.animation = "fadeOut 0.6s forwards";
     text.style.animation = "fadeOut 0.6s forwards";
 
@@ -253,6 +345,9 @@ function hideInitialBlock() {
     }, 600);
 }
 
+/* ================================
+      2️⃣ AGREGAR TODAS LAS ESTRELLAS
+================================ */
 function addStar() {
     for (let i = 0; i < total; i++) {
         setTimeout(() => {
@@ -265,11 +360,13 @@ function addStar() {
             else star.style.color = colors.mixto;
 
             starsContainer.appendChild(star);
-
         }, (i / total) * 3000);
     }
 }
 
+/* ================================
+      3️⃣ TEXTO FINAL
+================================ */
 function showFinalText() {
     finalText.innerHTML = `
         <div class="final-title">259 artistas</div>
@@ -277,54 +374,79 @@ function showFinalText() {
             Desde 1960, en el Festival se han presentado:<br><br>
             <span style="color:#EB008B;">● ${hombres} hombres</span><br>
             <span style="color:#7E4782;">● ${mujeres} mujeres</span><br>
-            <span style="color:#8FA3CC;">● ${mixtos} proyectos mixtos</span>
+            <span style="color:#2e3566;">● ${mixtos} proyectos mixtos</span>
         </div>
     `;
     finalText.style.animation = "fadeIn 1.8s forwards";
 }
 
-function startSequence() {
-    hideInitialBlock();
-    addStar();
+/* ================================
+      4️⃣ TODA LA SECUENCIA AL HACER CLICK
+================================ */
+
+// 👇 AHORA LA ANIMACIÓN SE ACTIVA AQUÍ
+document.getElementById("bigStar").addEventListener("click", () => {
+
+    hideInitialBlock();          // desaparece intro
+    addStar();                   // empiezan a aparecer estrellas
 
     const totalTime = (3 + 0.3) * 1000;
-
     setTimeout(() => {
         showFinalText();
     }, totalTime);
-}
+});
+  </script>
 
-let triggered = false;
 
+<script>
 window.addEventListener("scroll", () => {
-    if (!triggered) {
-        triggered = true;
-        startSequence();
-    }
+  const icon = document.querySelector(".icono-lateral");
+  const meta = document.querySelector(".icono-meta");
+
+  const maxScroll = document.body.scrollHeight - window.innerHeight;
+  const progress = window.scrollY / maxScroll;
+
+  // posición final = posición de la foto meta
+  const metaX = meta.offsetLeft - 40; // se ajusta para centrar mejor
+
+  const x = progress * metaX;
+
+  icon.style.transform = `translateX(${x}px)`;
+
+  // ✨ Crear brillito bonito
+  const brillo = document.createElement("div");
+  brillo.classList.add("brillito");
+
+  brillo.style.left = (x + 30) + "px";
+  brillo.style.top = "32px";
+
+  document.querySelector(".linea-scroll").appendChild(brillo);
+
+  setTimeout(() => brillo.remove(), 800);
 });
 </script>
 
-</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
 
+  const secciones = document.querySelectorAll(".seccion");
 
-<div class="parrafo analisis">
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const color = entry.target.getAttribute("data-color");
 
-  <p>Según los datos recopilados, aproximadamente el 73% de los artistas que se han presentado en Viña son hombres, mientras que solo el 19% corresponde a mujeres y solo un 8% a agrupaciones mixtas. Estos números dejan la situación clara: existe una brecha de género en el festival que no es menor, y aunque en los últimos años se han hecho esfuerzos por diversificar su parrilla, la desigualdad sigue siendo evidente.
-</p>
+        // Cambia el fondo del body
+        document.body.style.backgroundColor = color;
+      }
+    });
+  }, { threshold: 0.05 }); // SUPER sensible (apenas entra una parte ya cambia)
 
-</div>
+  secciones.forEach(sec => observer.observe(sec));
 
+});
+</script>
 
-
-
-<div class="carrusel fotos">
-<div class="flourish-embed flourish-cards" data-src="visualisation/26500255"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26500255/thumbnail" width="100%" alt="cards visualization" /></noscript></div>
-</div>
-
-</main>
 
 </body>
 </html>
-
-
- 
