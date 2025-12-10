@@ -22,6 +22,70 @@ VISUALIZACIÓN: Gráfico de las nacionalidades más repetidos en todas las edici
 
 <div class="flourish-embed flourish-hierarchy" data-src="visualisation/26592613"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26592613/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
 
+VISUALIZACIÓN: Gráfico de nacionalidades más repetidas por año.
+
+import pandas as pd
+import altair as alt
+
+# Datos ya procesados y fijos ✔ SIN EXCEL
+data = [
+    ("1960s", "España", 4),
+    ("1960s", "Argentina", 7),
+    ("1960s", "Chile", 32),
+
+    ("1970s", "España", 17),
+    ("1970s", "Argentina", 0),
+    ("1970s", "Chile", 22),
+
+    ("1980s", "España", 22),
+    ("1980s", "Argentina", 0),
+    ("1980s", "Chile", 42),
+
+    ("1990s", "España", 25),
+    ("1990s", "Argentina", 0),
+    ("1990s", "Chile", 50),
+
+    ("2000s", "España", 24),
+    ("2000s", "Argentina", 0),
+    ("2000s", "Chile", 62),
+
+    ("2010s", "España", 0),
+    ("2010s", "Argentina", 0),
+    ("2010s", "Chile", 25),
+
+    ("2020s", "España", 0),
+    ("2020s", "Argentina", 10),
+    ("2020s", "Chile", 11),
+]
+
+df = pd.DataFrame(data, columns=["Decada", "Pais", "Artistas"])
+
+# Orden fijo de países para que siempre se vean igual 💅
+pais_orden = ["España", "Argentina", "Chile"]
+
+# Paleta de lilas 💜
+palette = ["#7E4782", "#A37BBA", "#CBB3E8"]
+
+chart = alt.Chart(df).mark_bar(
+    cornerRadiusTopLeft=4,
+    cornerRadiusTopRight=4
+).encode(
+    x=alt.X("Decada:N",
+            title="Década",
+            sort=["1960s","1970s","1980s","1990s","2000s","2010s","2020s"]),
+    y=alt.Y("Artistas:Q", title="Nº de artistas"),
+    color=alt.Color("Pais:N",
+                    title="País",
+                    scale=alt.Scale(domain=pais_orden, range=palette)),
+    tooltip=["Decada", "Pais", "Artistas"]
+).properties(
+    width=520,
+    height=350,
+    title="Presencia de España, Argentina y Chile por década en Viña del Mar"
+)
+
+chart
+
 VISUALIZACIÓN: Gráfico de 1 cada 7 personas.
 
 En nuestro análisis, vimos que el 14% de los artistas consigue impacto real en los rankings luego de Viña.
