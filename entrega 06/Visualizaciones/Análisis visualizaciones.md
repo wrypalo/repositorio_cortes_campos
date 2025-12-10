@@ -25,6 +25,12 @@ Lo hicimos con FLOURISH
 
 A los artistas que más espacio le da Viña del Mar es a los artistas latinoamericanos, debido a que apunta al público latinoamericano. Esto refuerza nuestra idea de qué funciona como vitrina para artistas del continente, y no mundiales. 
 
+## VISUALIZACIÓN: Países que más se repiten por año
+
+Lo hicimos con Vega Altair 
+
+Este gráfico busca apoyar el anterior y expandir el análisis para demostrar como a lo largo de los años las nacionalidades más repetidas han sido las latinoamericanas, lo que refuerza nuestra idea de el espacio abierto a cantantes de América Latina. 
+
 ## VISUALIZACIÓN: Cantidad de artistas que han ingresado al TOP post presentación
 
 Lo hicimos con Illustrator 
